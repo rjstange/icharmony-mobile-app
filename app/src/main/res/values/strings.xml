@@ -1,8 +1,11 @@
 <resources>
+    <!-- Main -->
     <string name="app_name">ICHarmonyPrototype</string>
     <string name="phoneEntryTip">Enter your phone number</string>
     <string name="signInButton">Sign In/Up</string>
-    <string name="learnMore">Press to learn more...</string>
+    <string name="learnMore">Press to learn more…</string>
+
+    <!-- Survey -->
     <string name="greeting">Hello! What\'s your first name?</string>
     <string name="help_about_phone_number">Help about phone number</string>
     <string name="first_name">First Name (Optional)</string>
@@ -11,4 +14,22 @@
     <string name="action_settings">Settings</string>
     <string name="answer_placeholder">Put an answer here</string>
     <string name="answer_preference_placeholder">Answer Preference Here</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Preferences -->
+    <string name="profile">Profile</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="my_answers">My Answers</string>
+
+    <!-- Help & Questions -->
+    <string name="why_do_you_need_my_phone_number">Why do you need my phone number?:</string>
+    <string name="help_questions"><![CDATA[Help & Questions]]></string>
+    <string name="why_we_need_your_phone_number">We take your privacy very seriously at ICHarmony. Your phone number is only used to identify you as a user. Upon providing a cell phone number which you have access to, a code will be sent via SMS to authenticate that you have access to that number.</string>
+    <string name="preferences">Preferences</string>
+    <string name="preferences_description">Within preferences you can embrace the dark side with "Night Mode," modify your user profile, and view your previously answered questions and choose to re-answer them if you wish.</string>
+
 </resources>
