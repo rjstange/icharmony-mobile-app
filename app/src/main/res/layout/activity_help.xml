@@ -22,6 +22,24 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/previousButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:contentDescription="@string/skip"
+                android:focusable="true"
+                android:onClick="goToMain"
+                android:src="@android:drawable/ic_menu_revert"
+                android:visibility="visible"
+                app:backgroundTint="@color/mint"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
             <TextView
                 android:id="@+id/helpTitle"
                 android:layout_width="wrap_content"
@@ -57,7 +75,7 @@
                 android:layout_gravity="center"/>
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/prefDescribe"
                 android:layout_width="360dp"
                 android:layout_height="wrap_content"
                 android:text="@string/preferences_description"

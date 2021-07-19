@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/phoneEntry"
+        android:id="@+id/textEntry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -26,6 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="308dp"
         android:clickable="true"
+        android:focusable="true"
+        android:onClick="goToWeb"
         android:text="@string/learnMore"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phoneEntry" />
+        app:layout_constraintTop_toBottomOf="@+id/textEntry" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
@@ -55,9 +57,10 @@
         android:clickable="true"
         android:contentDescription="@string/help_about_phone_number"
         android:focusable="true"
+        android:onClick="goToHelp"
         app:backgroundTint="@color/mint"
         app:layout_constraintBottom_toTopOf="@+id/signIn"
-        app:layout_constraintStart_toEndOf="@+id/phoneEntry"
+        app:layout_constraintStart_toEndOf="@+id/textEntry"
         app:srcCompat="@android:drawable/ic_menu_help" />
 
     <ImageView
@@ -66,6 +69,8 @@
         android:layout_height="213dp"
         android:layout_marginTop="28dp"
         android:clickable="true"
+        android:focusable="true"
+        android:onClick="goToWeb"
         app:layout_constraintBottom_toTopOf="@+id/uparrow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -77,6 +82,7 @@
         android:id="@+id/uparrow"
         android:layout_width="46dp"
         android:layout_height="0dp"
+        android:onClick="goToWeb"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="@+id/icharmony_logo"
         app:layout_constraintStart_toStartOf="@+id/icharmony_logo"
