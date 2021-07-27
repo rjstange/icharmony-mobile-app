@@ -7,6 +7,22 @@
     tools:context=".SurveyActivity">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/settingsButton2"
+        android:layout_width="66dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:contentDescription="@string/settings_desc"
+        android:focusable="true"
+        android:onClick="goToSettings"
+        app:backgroundTint="@color/mint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_preferences" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/previousButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,13 +31,13 @@
         android:layout_marginTop="4dp"
         android:clickable="true"
         android:contentDescription="@string/skip"
+        android:focusable="true"
         android:src="@android:drawable/ic_media_previous"
         android:visibility="invisible"
         app:backgroundTint="@color/mint"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars"
-        android:focusable="true" />
+        tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/surveyTitle"
@@ -29,6 +45,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="2dp"
         android:layout_marginBottom="18dp"
+        android:gravity="center_horizontal"
         android:text="@string/survey"
         android:textAlignment="center"
         android:textAllCaps="false"
@@ -37,8 +54,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        android:gravity="center_horizontal" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/skipButton"
@@ -49,12 +65,12 @@
         android:layout_marginRight="4dp"
         android:clickable="true"
         android:contentDescription="@string/skip"
+        android:focusable="true"
         android:src="@android:drawable/ic_media_next"
         app:backgroundTint="@color/mint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars"
-        android:focusable="true" />
+        tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/question"
@@ -90,12 +106,12 @@
         android:layout_marginRight="24dp"
         android:layout_marginBottom="432dp"
         android:clickable="true"
+        android:focusable="true"
         android:src="@android:drawable/ic_menu_help"
         app:backgroundTint="@color/mint"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:srcCompat="@tools:sample/avatars"
-        android:focusable="true" />
+        tools:srcCompat="@tools:sample/avatars" />
 
     <RadioGroup
         android:id="@+id/answerButtons"

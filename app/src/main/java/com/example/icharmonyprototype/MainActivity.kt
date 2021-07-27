@@ -106,4 +106,9 @@ class MainActivity : AppCompatActivity() {
     fun goToWeb(view: View) {
         startActivity(webIntent)
     }
+
+    fun goToSettings(view: View) {
+        val intent = Intent(this, SettingsActivity::class.java)
+        startActivity(intent)
+    }
 }

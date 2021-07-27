@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ICHarmonyPrototype">
-        <activity android:name=".AuthActivity"></activity>
+        <activity android:name=".AnswersActivity"></activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".AuthActivity" />
         <activity android:name=".HelpActivity" />
         <activity
             android:name=".SettingsActivity"
